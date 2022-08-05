@@ -23,13 +23,11 @@ for (let contador = 0; contador < listaDeTeclas.length; contador++) {
 
     tecla.onkeydown = function (evento) {
 
-
-        if (evento.code === 'Space') {
+    /*incluindo a tecla "Enter" e "Space" à animação
+      simbulo entre 'Space' e evento significa "ou"
+    */
+        if (evento.code === 'Space' || evento.code === 'Enter') {
         tecla.classList.add('ativa');
-        }
-
-        if (evento.code === 'Enter') {
-            tecla.classList.add('ativa');
         }
 
     }
