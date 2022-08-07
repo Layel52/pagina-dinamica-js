@@ -5,6 +5,13 @@ function tocaSom (idElementoAudio) {
         console.log('Elemento não encontrado')
     }
 
+    if (elemento != null) {
+
+        if (elemento.localName === 'audio') {
+
+        }
+    }
+
 }
 
 
